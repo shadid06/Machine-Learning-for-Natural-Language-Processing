@@ -1,0 +1,90 @@
+# ============================================================
+# Python virtual environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# ============================================================
+# Python cache & compiled files
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ============================================================
+# ML / NLP model files (large binary weights)
+# ============================================================
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Hugging Face cached models / tokenizer artefacts
+# (keep tokenizer.json / config.json if they are small config files — 
+#  comment out the lines below if you want to track them)
+# sentiment-model/
+# *.json  # <-- leave JSON config files tracked (they are tiny)
+
+# Large model output directories — add your specific dirs here
+sentiment-results/
+
+# ============================================================
+# Jupyter Notebooks checkpoints
+# ============================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================================
+# Data files (usually large)
+# ============================================================
+*.csv
+*.tsv
+*.parquet
+*.arrow
+*.jsonl
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ============================================================
+# Logs & outputs
+# ============================================================
+*.log
+logs/
+runs/
+wandb/
+lightning_logs/
+
+# ============================================================
+# OS / editor noise
+# ============================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ============================================================
+# Misc
+# ============================================================
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
